@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './routes/Header';
 import Footer from './routes/Footer';
 import About from './routes/About';
-import Projects from './routes/Projects';
+import ProjectsContainer from './containers/ProjectsContainer';
 import Blog from './routes/Blog';
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
         </header>
 
         <Route path="/blog" exact component={Blog} />
-        <Route path="/projects" exact component={Projects} />
+        <Route path="/projects" exact component={ProjectsContainer} />
         <Route path="/about" exact component={About} />
 
         <Footer />
