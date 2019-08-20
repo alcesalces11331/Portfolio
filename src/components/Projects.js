@@ -1,13 +1,7 @@
-import React, { Component } from 'react';
-import ProjectsContainer from '../containers/ProjectsContainer';
+import React from 'react';
 
-class Projects extends Component {
-
-    render() {
-        return (
-            <div>Dynamic component for ProjectsContainer</div>
-        )
-    }
-}
+const Project = props => <div class="project-container">
+    <div>Dynamic component for ProjectsContainer</div>
+</div>
 
 export default Projects;
