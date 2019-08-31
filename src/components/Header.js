@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav'
 import { Link } from 'react-router-dom';
 
@@ -15,14 +14,12 @@ const Header = props => {
                             Rollin Metzger
                         </div>
                         <div className="mid-nav-wrap">
-                            <Navbar sticky="top">
-                                <Nav>
-                                    <Link to="/">Home</Link>||
-                                    <Link to="/about">About</Link>||
-                                    <Link to="/projects">Projects</Link>||
-                                    <Link to="/blog">Blog</Link>
-                                </Nav>
-                            </Navbar>
+                            <Nav>
+                                <Link to="/" className="header-nav-link">Home</Link>
+                                <Link to="/about" className="header-nav-link">About</Link>
+                                <Link to="/projects" className="header-nav-link">Projects</Link>
+                                <Link to="/blog" className="header-nav-link">Blog</Link>
+                            </Nav>
                         </div>
                     </div>
                 </div>

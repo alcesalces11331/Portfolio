@@ -70,14 +70,30 @@
   width: 149px;
   font-size: calc(0px + 2vmin);
   padding: 10px 20px;
-  color: #1C4B39;
+  color: rgb(214, 226, 221);
 }
 
 .mid-nav-wrap {
   height: 100%;
   position: relative;
   float: right;
+  margin: 0;
+  width: auto;
+}
+
+.header-nav-link {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  position: relative;
   font-size: calc(0px + 2vmin);
-  padding: 10px 20px;
+  color: #1C4B39;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.header-nav-link:hover {
+  text-decoration: underline;
 }
 
