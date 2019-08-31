@@ -12,18 +12,21 @@ const Header = props => {
                 <div className="header-mid-outer">
                     <div className="header-mid-inner">
                         <div className="personal-name-logo-wrap">
-
+                            Rollin Metzger
+                        </div>
+                        <div className="mid-nav-wrap">
+                            <Navbar sticky="top">
+                                <Nav>
+                                    <Link to="/">Home</Link>||
+                                    <Link to="/about">About</Link>||
+                                    <Link to="/projects">Projects</Link>||
+                                    <Link to="/blog">Blog</Link>
+                                </Nav>
+                            </Navbar>
                         </div>
                     </div>
                 </div>
-            <Navbar sticky="top">
-                <Nav>
-                    <Link to="/">Home</Link>||
-                    <Link to="/about">About</Link>||
-                    <Link to="/projects">Projects</Link>||
-                    <Link to="/blog">Blog</Link>
-                </Nav>
-            </Navbar>
+            
             </div>
         </div>
                
