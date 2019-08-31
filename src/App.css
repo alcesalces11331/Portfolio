@@ -32,6 +32,8 @@
   }
 }
 
+/* ##################### HEADER ##################### */
+
 #header {
   width: 100%;
   position: absolute;
@@ -41,5 +43,31 @@
 .header-mid {
   height: 60px;
   min-height: 60px!important;
-  background-color: rgb(245, 202, 185);
+  background-color: rgb(197, 146, 123);
 }
+
+.header-mid .header-mid-outer {
+  height: 100%;
+  position: relative;
+}
+
+.header-mid-inner {
+  height: 100%;
+  position: relative;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.personal-name-logo-wrap {
+  height: 100%;
+  position: relative;
+  float: left;
+  width: 149px;
+}
+
+.mid-nav-wrap {
+  height: 100%;
+  position: relative;
+  float: right;
+}
+
