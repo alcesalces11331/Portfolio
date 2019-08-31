@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav'
 import { Link } from 'react-router-dom';
 
-// This presentational component will render only the navbar links
+// This presentational component will render the header
 
 const Header = props => {
     return(
@@ -28,8 +28,7 @@ const Header = props => {
                 </div>
             
             </div>
-        </div>
-               
+        </div>          
     )
 }
 
