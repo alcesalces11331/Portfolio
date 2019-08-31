@@ -31,3 +31,15 @@
     transform: rotate(360deg);
   }
 }
+
+#header {
+  width: 100%;
+  position: absolute;
+  z-index: 9999;
+}
+
+.header-mid {
+  height: 60px;
+  min-height: 60px!important;
+  background-color: lightsalmon;
+}

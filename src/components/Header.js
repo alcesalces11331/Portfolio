@@ -7,14 +7,26 @@ import { Link } from 'react-router-dom';
 
 const Header = props => {
     return(
-        <Navbar sticky="top">
-            <Nav>
-                <Link to="/">Home</Link>||
-                <Link to="/about">About</Link>||
-                <Link to="/projects">Projects</Link>||
-                <Link to="/blog">Blog</Link>
-            </Nav>
-        </Navbar>
+        <div id="header">
+            <div className="header-mid">
+                <div className="header-mid-outer">
+                    <div className="header-mid-inner">
+                        <div className="personal-name-logo-wrap">
+
+                        </div>
+                    </div>
+                </div>
+            <Navbar sticky="top">
+                <Nav>
+                    <Link to="/">Home</Link>||
+                    <Link to="/about">About</Link>||
+                    <Link to="/projects">Projects</Link>||
+                    <Link to="/blog">Blog</Link>
+                </Nav>
+            </Navbar>
+            </div>
+        </div>
+               
     )
 }
 
