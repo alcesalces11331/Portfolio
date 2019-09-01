@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './components/Header';
@@ -12,23 +11,22 @@ function App() {
   return (
     <Router>
       <div className="App">
-      
         <header className="App-header">
-        <Header />
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <Header />
         </header>
-
+        <body id="App-body-main">
+          <div className="body-main-inner">
+            <div className="personal-text-container">
+              <div>
+                <h1>
+                  Rollin Metzger
+                  <br />
+                  Full-Stack Engineer
+                </h1>
+              </div>
+            </div>
+          </div>
+        </body>
         <Route path="/blog" exact component={Blog} />
         <Route path="/projects" exact component={ProjectsContainer} />
         <Route path="/about" exact component={About} />
