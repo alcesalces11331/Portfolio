@@ -23,6 +23,10 @@ function App() {
                   <br />
                   Full-Stack Engineer
                 </h1>
+                <p>I am a driven full-stack developer with an insatiable curiosity for code</p>
+                <p>
+                  <a href="/about">About Me</a>
+                </p>
               </div>
             </div>
           </div>

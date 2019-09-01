@@ -45,12 +45,14 @@
   position: top;
   z-index: 9999;
   max-width: none;
+  background-color: rgb(197, 146, 123);
 }
 
 .header-mid {
   height: 60px;
   min-height: 60px!important;
-  background-color: rgb(197, 146, 123);
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .header-mid .header-mid-outer {
@@ -108,4 +110,14 @@ body {
 
 #App-body-main {
   margin: 0;
+}
+
+.personal-text-container {
+  position: relative;
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  padding: 20px;
+  font-family: "Open Sans";
 }
