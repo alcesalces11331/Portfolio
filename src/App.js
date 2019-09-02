@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import About from './routes/About';
 import ProjectsContainer from './containers/ProjectsContainer';
 import Blog from './routes/Blog';
+import me from './images/me.jpg';
 
 function App() {
   return (
@@ -28,7 +29,13 @@ function App() {
                   <a href="/about">About Me</a>
                 </p>
               </div>
+              <div className="personal-image-container">
+                <div>
+                  <img src={me} alt='Myself' />
+                </div>
             </div>
+            </div>
+            
           </div>
         </body>
         <Route path="/blog" exact component={Blog} />
