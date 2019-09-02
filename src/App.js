@@ -15,7 +15,7 @@ function App() {
         <header className="App-header">
           <Header />
         </header>
-        <body id="App-body-main">
+        <div id="App-body-main">
           <div className="body-main-inner">
             <div className="personal-text-container">
               <div>
@@ -33,11 +33,11 @@ function App() {
                 <div>
                   <img src={me} alt='Myself' />
                 </div>
-            </div>
+              </div>
             </div>
             
           </div>
-        </body>
+        </div>
         <Route path="/blog" exact component={Blog} />
         <Route path="/projects" exact component={ProjectsContainer} />
         <Route path="/about" exact component={About} />
