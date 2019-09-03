@@ -11,10 +11,10 @@ import lodgepoleForestB from './images/lodgepoleForestB.jpg';
 import { setDefaultBreakpoints } from 'react-socks';
 
 setDefaultBreakpoints([
-  { mobile: 600 },
-  { tablet: 768 },
-  { laptops: 992 },
-  { desktop: 1200 }
+  { small: 600 },
+  { medium: 768 },
+  { large: 992 },
+  { xlarge: 1200 }
 ])
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
         <header className="App-header">
           <Header />
         </header>
-        
+
         <Home />
 
         <Route path="/blog" exact component={Blog} />

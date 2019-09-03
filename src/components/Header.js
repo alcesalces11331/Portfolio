@@ -5,9 +5,18 @@ import { Link } from 'react-router-dom';
 // This presentational component will render the header
 
 class Header extends Component {
-    render() {
+
+    renderMediumDown = () => {
         return(
-            <div id="header">
+            <Breakpoint medium down>
+
+            </Breakpoint>
+        )
+    }
+
+    renderMediumUp = () => {
+        return(
+            <Breakpoint medium up>  
                 <div className="header-mid">
                     <div className="header-mid-outer">
                         <div className="header-mid-inner">
@@ -25,7 +34,16 @@ class Header extends Component {
                         </div>
                     </div>
                 </div>
-            </div>          
+            </Breakpoint>
+        )
+    }
+
+    render() {
+        return(
+            <div id="header">
+                {this.renderMediumUp()}
+            
+            </div>
         )
     }
 }
