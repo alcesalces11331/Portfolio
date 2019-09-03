@@ -121,15 +121,17 @@ body {
   margin: 0;
   display: inline-block;
   z-index: 0;
+  position: relative;
 }
 
 .body-main-inner {
   max-width: 960px;
   margin: 0 auto;
   z-index: 5;
-  position: fixed;
-  top: 25vh;
-  left: 38vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .personal-text-container {
