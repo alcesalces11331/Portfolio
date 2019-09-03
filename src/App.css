@@ -120,11 +120,16 @@ body {
 #App-body-main {
   margin: 0;
   display: inline-block;
+  z-index: 0;
 }
 
 .body-main-inner {
   max-width: 960px;
   margin: 0 auto;
+  z-index: 5;
+  position: fixed;
+  top: 25vh;
+  left: 38vh;
 }
 
 .personal-text-container {
@@ -145,4 +150,16 @@ body {
   object-fit: contain;
   float: right;
   padding: 10px 25px;
+}
+
+#home-background-image-main {
+  z-index: -2;
+  display: inline-flex;
+}
+
+#home-background-image-main img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.2;
 }

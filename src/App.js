@@ -7,6 +7,7 @@ import About from './routes/About';
 import ProjectsContainer from './containers/ProjectsContainer';
 import Blog from './routes/Blog';
 import me from './images/me.jpg';
+import lodgepoleForestB from './images/lodgepoleForestB.jpg';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
           <Header />
         </header>
         <div id="App-body-main">
+          <div id="home-background-image-main">
+            <img src={lodgepoleForestB} alt="Wintry High Altidude Pines" />
+          </div>
           <div className="body-main-inner">
             <div className="personal-text-container">
               <div>
