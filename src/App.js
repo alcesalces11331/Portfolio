@@ -7,6 +7,14 @@ import About from './routes/About';
 import ProjectsContainer from './containers/ProjectsContainer';
 import Blog from './routes/Blog';
 import lodgepoleForestB from './images/lodgepoleForestB.jpg';
+import { setDefaultBreakpoints } from 'react-socks';
+
+setDefaultBreakpoints([
+  { mobile: 600 },
+  { tablet: 768 },
+  { laptops: 992 },
+  { desktop: 1200 }
+])
 
 function App() {
   return (
