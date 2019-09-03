@@ -119,6 +119,12 @@ body {
 
 #App-body-main {
   margin: 0;
+  display: inline-block;
+}
+
+.body-main-inner {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .personal-text-container {
@@ -129,6 +135,7 @@ body {
   align-items: center;
   padding: 20px;
   font-family: "Open Sans";
+  float: left;
 }
 
 .personal-image-container img {
@@ -136,4 +143,6 @@ body {
   min-width: 50%;
   height: auto;
   object-fit: contain;
+  float: right;
+  padding: 10px 25px;
 }
