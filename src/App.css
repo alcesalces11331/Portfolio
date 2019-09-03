@@ -130,28 +130,23 @@ body {
   z-index: 5;
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
+  right: 50px;
+  left: 50px;
 }
 
 .personal-text-container {
   position: relative;
-  display: flex;
+  display: block;
   max-width: 1200px;
   margin: auto;
   align-items: center;
-  padding: 20px;
   font-family: "Open Sans";
-  float: left;
 }
 
-.personal-image-container img {
-  width: 50%;
-  min-width: 50%;
-  height: auto;
-  object-fit: contain;
-  float: right;
-  padding: 10px 25px;
+.personal-quote-container {
+  display: relative;
+  position: absolute;
+  z-index: 4;
 }
 
 #home-background-image-main {
