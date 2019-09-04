@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import lodgepoleForestB from '../images/lodgepoleForestB.jpg';
-//'./images/lodgepoleForestB.jpg'
+import oroborosEnso from '../images/oroborosEnso.png';
+//import lodgepoleForestB from '../images/lodgepoleForestB.jpg';
 
 class Home extends Component {
 
@@ -8,7 +8,7 @@ class Home extends Component {
         return(
             <div id="App-body-main">
                 <div id="home-background-image-main">
-                    <img src={lodgepoleForestB} alt="Wintry High Altidude Pines" />
+                    <img src={oroborosEnso} alt="oroboso enso" className="App-logo-spin App-logo"/>
                     <div className="body-main-inner">
                         <div className="personal-text-container">
                             <div>
