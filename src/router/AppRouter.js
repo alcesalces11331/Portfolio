@@ -5,7 +5,8 @@ import Footer from '../components/Footer';
 import About from '../routes/About';
 import ProjectsContainer from '../containers/ProjectsContainer';
 import Blog from '../routes/Blog';
-import BackgroundImage from '../components/Background-Image';
+
+import Home from '../components/Home';
 
 function AppRouter() {
     return (
@@ -18,31 +19,17 @@ function AppRouter() {
             />
 
             <div className="App">
-            
-            <Header />
-
-            <div id="App-body-main">
-                <Route path={"/"} component={BackgroundImage} />
-                <div className="body-main-inner">
-                    <div className="personal-text-container">
-                        <div>
-                            <h1>
-                                Rollin Metzger
-                                <br />
-                                Full-Stack Engineer
-                            </h1>
-                        </div>
-                    </div>
-                </div>
+                <Header />
+                
+                <Switch>
+                    <Route path="/" exact component={Home} />
+                    <Route path="/blog" exact component={Blog} />
+                    <Route path="/projects" exact component={ProjectsContainer} />
+                    <Route path="/about" exact component={About} />
+                </Switch>
+                
+                <Footer />
             </div>
-
-            <Footer />
-            </div>
-            <Switch>
-                <Route path="/blog" exact component={Blog} />
-                <Route path="/projects" exact component={ProjectsContainer} />
-                <Route path="/about" exact component={About} />
-            </Switch>
         </Router>
     )
 }
