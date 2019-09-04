@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import oroborosEnso from '../images/oroborosEnso.png';
+import Image from 'react-bootstrap/Image';
 //import lodgepoleForestB from '../images/lodgepoleForestB.jpg';
 
 class Home extends Component {
@@ -8,7 +9,7 @@ class Home extends Component {
         return(
             <div id="App-body-main">
                 <div id="home-background-image-main">
-                    <img src={oroborosEnso} alt="oroboso enso" className="App-logo-spin App-logo"/>
+                    <Image src={oroborosEnso} alt="oroboso enso" className="App-logo-spin App-logo" roundedCircle />
                     <div className="body-main-inner">
                         <div className="personal-text-container">
                             <div>

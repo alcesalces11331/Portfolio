@@ -2,6 +2,9 @@
   text-align: center;
   background-color:rgb(251,251,249);
   width: 100%;
+  flex-direction: column;
+  display: flex;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -139,16 +142,26 @@ body {
 .personal-quote-container {
   display: relative;
   position: absolute;
-  z-index: 4;
+  z-index: 6;
 }
 
 #home-background-image-main {
   display: inline-flex;
+  position: relative;
+  z-index: 2;
 }
 
 #home-background-image-main img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 0;
+}
 
+/* ##################### FOOTER ##################### */
+
+#footer {
+  position: relative;
+  z-index: 10;
+  flex-grow: 1;
 }
