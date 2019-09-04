@@ -1,49 +1,61 @@
 import React, { Component } from 'react';
 import Nav from 'react-bootstrap/Nav'
 import { Link } from 'react-router-dom';
-
-// This presentational component will render the header
+import Navbar from 'react-bootstrap/Navbar';
 
 class Header extends Component {
 
     renderMediumDown = () => {
         return(
-            <Breakpoint medium down>
-
-            </Breakpoint>
+            <Navbar expand='md'>
+                <div className="header-med-down">
+                    <div className="header-down-outer">
+                        <div className="header-down-inner row">
+                            <div className="down-name-logo col-">
+                                RM
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </Navbar>
         )
     }
 
     renderMediumUp = () => {
         return(
-            <Breakpoint medium up>  
-                <div className="header-mid">
-                    <div className="header-mid-outer">
-                        <div className="header-mid-inner">
-                            <div className="personal-name-logo-wrap">
-                                Rollin Metzger
-                            </div>
-                            <div className="mid-nav-wrap">
-                                <Nav>
-                                    <Link to="/" className="header-nav-link">Home</Link>
-                                    <Link to="/about" className="header-nav-link">About</Link>
-                                    <Link to="/projects" className="header-nav-link">Projects</Link>
-                                    <Link to="/blog" className="header-nav-link">Blog</Link>
-                                </Nav>
-                            </div>
+            <div className="header-med-up">
+                <div className="header-up-outer">
+                    <div className="header-up-inner row">
+                        <div className="up-name-logo col-">
+                            Rollin Metzger
+                        </div>
+                        <div className="mid-nav-wrap">
+                            <Nav>
+                                <Link to="/" className="header-nav-link">Home</Link>
+                                <Link to="/about" className="header-nav-link">About</Link>
+                                <Link to="/projects" className="header-nav-link">Projects</Link>
+                                <Link to="/blog" className="header-nav-link">Blog</Link>
+                            </Nav>
                         </div>
                     </div>
                 </div>
-            </Breakpoint>
+            </div>
         )
     }
 
     render() {
         return(
-            <div id="header">
-                {this.renderMediumUp()}
-            
-            </div>
+            <Navbar id="header" expand='md'>
+                <Navbar.Brand href="#home">Rollin Metzger</Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="ml-auto">
+                        <Nav.Link href="#about">About</Nav.Link>
+                        <Nav.Link href="#projects">Projects</Nav.Link>
+                        <Nav.Link href="#blog">Blog</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>         
         )
     }
 }

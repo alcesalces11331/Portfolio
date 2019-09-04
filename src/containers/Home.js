@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import lodgepoleForestB from '../images/lodgepoleForestB.jpg';
+//'./images/lodgepoleForestB.jpg'
 
 class Home extends Component {
 
@@ -35,3 +37,5 @@ class Home extends Component {
         )
     }
 }
+
+export default Home;

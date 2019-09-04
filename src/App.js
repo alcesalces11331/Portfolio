@@ -7,23 +7,20 @@ import About from './routes/About';
 import Home from './containers/Home';
 import ProjectsContainer from './containers/ProjectsContainer';
 import Blog from './routes/Blog';
-import lodgepoleForestB from './images/lodgepoleForestB.jpg';
-import { setDefaultBreakpoints } from 'react-socks';
-
-setDefaultBreakpoints([
-  { small: 600 },
-  { medium: 768 },
-  { large: 992 },
-  { xlarge: 1200 }
-])
 
 function App() {
   return (
     <Router>
+      <link 
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossOrigin="anonymous"
+      />
+
       <div className="App">
-        <header className="App-header">
-          <Header />
-        </header>
+        
+        <Header />
 
         <Home />
 

@@ -19,12 +19,6 @@
   margin: auto;
 }
 
-.App-header {
-  position: top;
-  height: 70px;
-  margin: 0;
-}
-
 .App-link {
   color: #61dafb;
 }
@@ -56,26 +50,26 @@ img {
   background-color: rgb(197, 146, 123);
 }
 
-.header-mid {
+.header-med-up {
   height: 60px;
   min-height: 60px!important;
   max-width: 960px;
   margin: 0 auto;
 }
 
-.header-mid .header-mid-outer {
+.header-med-up .header-up-outer {
   height: 100%;
   position: relative;
 }
 
-.header-mid-inner {
+.header-up-inner {
   height: 100%;
   position: relative;
   padding: 0 20px;
   margin: 0 auto;
 }
 
-.personal-name-logo-wrap {
+.up-name-logo {
   height: 100%;
   position: relative;
   float: left;
