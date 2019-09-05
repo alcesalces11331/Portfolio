@@ -120,7 +120,7 @@ body {
 }
 
 #App-body-main {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-color: rgb(255, 255, 255);
   text-align: center;
@@ -148,6 +148,21 @@ body {
   font-family: "Open Sans";
 }
 
+#home-background-image-main {
+  display: inline-flex;
+  position: relative;
+  z-index: 2;
+}
+
+#home-background-image-main img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+
+/* ##################### ABOUT ##################### */
+
 .personal-quote-container {
   position: relative;
   display: block;
@@ -157,13 +172,15 @@ body {
   font-family: "Open Sans";
 }
 
-#home-background-image-main {
+#about-background-image-main {
   display: inline-flex;
   position: relative;
-  z-index: 2;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-#home-background-image-main img {
+#about-background-image-main img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
