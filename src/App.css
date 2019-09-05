@@ -1,10 +1,13 @@
+html {
+  height: 100%;
+}
+
 .App {
   text-align: center;
   background-color:rgb(251,251,249);
   width: 100%;
   flex-direction: column;
   display: flex;
-  min-height: 100vh;
   height: 100%;
 }
 
@@ -113,6 +116,7 @@ img {
 body {
   height: 100%;
   width: 100%;
+ 
 }
 
 #App-body-main {
@@ -131,7 +135,8 @@ body {
   z-index: 5;
   display: inline-block;
   position: absolute;
-  
+  align-items: center;
+  justify-content: center;
 }
 
 .personal-text-container {
@@ -144,9 +149,12 @@ body {
 }
 
 .personal-quote-container {
-  display: relative;
-  position: absolute;
-  z-index: 6;
+  position: relative;
+  display: block;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  font-family: "Open Sans";
 }
 
 #home-background-image-main {
@@ -164,8 +172,16 @@ body {
 
 /* ##################### FOOTER ##################### */
 
+#footer-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #footer {
-  position: relative;
-  z-index: 10;
-  flex-grow: 1;
+  display: inline-block;
+  position: fixed;
+  justify-content: center;
+  bottom: 0;
 }
