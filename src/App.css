@@ -5,6 +5,7 @@
   flex-direction: column;
   display: flex;
   min-height: 100vh;
+  height: 100%;
 }
 
 .App-logo {
@@ -118,16 +119,19 @@ body {
   height: 100%;
   width: 100%;
   background-color: rgb(255, 255, 255);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .body-main-inner {
   max-width: 960px;
   margin: 0 auto;
   z-index: 5;
+  display: inline-block;
   position: absolute;
-  top: 0;
-  right: 50px;
-  left: 50px;
+  
 }
 
 .personal-text-container {
