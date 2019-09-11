@@ -1,12 +1,11 @@
 import React from 'react';
 import Image from 'react-bootstrap/Image';
-import lodgepoleForestB from '../images/lodgepoleForestB.jpg';
 
 const About = props => {
     return(
         <div id="App-body-main">
             <div id="about-background-image-main">
-                <Image src={lodgepoleForestB} alt="wintry pines" img-responsive="true" />
+                
             </div>
             <div className="body-main-inner">
                 <div className="personal-quote-container">
