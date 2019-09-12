@@ -105,8 +105,8 @@ img {
   text-decoration: none;
 }
 
-.header-nav-link:hover {
-  text-decoration: underline;
+#responsive-navbar-nav {
+  text-align: right;
 }
 
 /* ##################### BODY ##################### */
@@ -236,12 +236,4 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-#footer {
-  display: inline-block;
-  position: fixed;
-  justify-content: center;
-  bottom: 0;
-  color: rgb(0, 0, 0);
 }

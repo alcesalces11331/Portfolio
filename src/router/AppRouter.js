@@ -28,9 +28,8 @@ function AppRouter() {
                     <Route path="/about" exact component={About} />
                 </Switch>
                 
-                
+                <Footer />
             </div>
-            <Footer />
         </Router>
     )
 }
