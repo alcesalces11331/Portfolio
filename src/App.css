@@ -127,6 +127,10 @@ body {
   justify-content: center;
 }
 
+.home #background-image-container #background-image-ancientTree {
+  display: none;
+}
+
 .body-main-inner-fullName {
   max-width: 960px;
   display: flex;
@@ -143,18 +147,22 @@ body {
   font-family: "Open Sans";
 }
 
-#home-background-image-container {
+#background-image-container {
   display: flex;
   flex-direction: column;
 }
 
-#home-background-image-birdsFlying {
+#background-image-container #ancientTree {
+  display: none;
+}
+
+#background-image-birdsFlying {
   display: inline-flex;
   position: relative;
   z-index: 2;
 }
 
-#home-background-image-birdsFlying img {
+#background-image-birdsFlying img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -162,17 +170,17 @@ body {
 }
 
 @media only screen and (max-width: 1080px) {
-  #home-background-image-birdsFlying {
+  #background-image-birdsFlying {
     display: none;
   }
 }
 
-#home-background-image-ensoEcosystem {
+#background-image-ensoEcosystem {
   display: none;
 }
   
 
-#home-background-image-ensoEcosystem img {
+#background-image-ensoEcosystem img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -181,7 +189,7 @@ body {
 }
 
 @media only screen and (max-width: 1080px) {
-  #home-background-image-ensoEcosystem {
+  #background-image-ensoEcosystem {
     display: inline-flex;
     position: relative;
     z-index: 2;
@@ -205,27 +213,25 @@ body {
 
 /* ##################### ABOUT ##################### */
 
+.about-main-inner {
+
+  flex-direction: column;
+}
+
 .personal-quote-container {
-  position: relative;
-  display: block;
-  max-width: 1200px;
+  display: flex;
   margin: auto;
   align-items: center;
   font-family: "Open Sans";
 }
 
-#about-background-image-main {
-  display: inline-flex;
-  position: relative;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+#about-background-image-main #background-image-container .about-hide {
+  display: none;
 }
 
-#about-background-image-main img {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#about-background-image-main {
+  
+  opacity: .2;
   z-index: 0;
 }
 

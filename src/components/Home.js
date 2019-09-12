@@ -3,7 +3,7 @@ import BackgroundImage from '../components/Background-Image';
 
 const Home = props => {
     return(
-        <div id="App-body-main">
+        <div id="App-body-main" class="home">
             <BackgroundImage />
             <div className="body-main-inner-fullName">
                 <div className="personal-text-container">
