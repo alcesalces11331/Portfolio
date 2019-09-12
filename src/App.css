@@ -214,15 +214,17 @@ body {
 /* ##################### ABOUT ##################### */
 
 .about-main-inner {
-
+  display: flex;
   flex-direction: column;
 }
 
 .personal-quote-container {
+  max-width: 960px;
   display: flex;
-  margin: auto;
   align-items: center;
+  justify-content: center;
   font-family: "Open Sans";
+  z-index: 2;
 }
 
 #about-background-image-main #background-image-container .about-hide {
@@ -230,9 +232,9 @@ body {
 }
 
 #about-background-image-main {
-  
+  position: absolute;
   opacity: .2;
-  z-index: 0;
+  z-index: 1;
 }
 
 /* ##################### FOOTER ##################### */
