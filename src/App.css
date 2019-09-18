@@ -250,7 +250,41 @@ body {
 
 /* ##################### FOOTER ##################### */
 
-#footer-container {
-  position: absolute;
+#footer-main-container {
+  display: flex;
   bottom: 0;
+  background-color: whitesmoke;
+}
+
+.footer-inner-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 2;
+  justify-content: space-around;
+  width: calc(33.333% - 20px);
+  margin-left: 20px;
+  padding: 5px;
+  align-content: center;
+}
+
+.info-personal-container {
+  position: left;
+}
+
+.info-personal p{
+  margin: 0;
+  color: rgb(59, 4, 4);
+}
+
+.social-media-link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-content: inherit;
+}
+
+.social-media-link a{
+  margin: 5px;
+  justify-content: space-around;
 }
