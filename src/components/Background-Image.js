@@ -9,10 +9,10 @@ const BackgroundImage = props => {
     
     return(
         <div id="background-image-container">
-            <div id="background-image-birdsFlying" class="about-hide">
+            <div id="background-image-birdsFlying" className="about-hide">
                 <Image path={"/"} src={birdsFlying} alt="graceful birds, black and white" />
             </div>
-            <div id="background-image-ensoEcosystem" class="about-hide">
+            <div id="background-image-ensoEcosystem" className="about-hide">
                 <Image path={"/"} src={ensoEcosystem} alt="enso ecosystem" />
             </div>
             <div id="background-image-ancientTree">

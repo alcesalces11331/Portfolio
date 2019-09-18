@@ -1,4 +1,4 @@
-html {
+body, html {
   height: 100%;
   background-color: rgb(255, 255, 255);
 }
@@ -9,8 +9,15 @@ html {
   width: 100%;
   flex-direction: column;
   display: flex;
+  flex-wrap: none;
   height: 100%;
-  min-height: 100vh;
+}
+
+#root {
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 /*
@@ -117,7 +124,7 @@ body {
 }
 
 #App-body-main {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: rgb(255, 255, 255);
   text-align: center;
@@ -125,6 +132,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-grow: 1;
 }
 
 .home #background-image-container #background-image-ancientTree {
@@ -216,11 +224,13 @@ body {
 .about-main-inner {
   display: flex;
   flex-direction: column;
+  justify-content: inherit;
+  z-index: 2;
+  position: absolute;
 }
 
 .personal-quote-container {
   max-width: 960px;
-  display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Open Sans";
@@ -232,16 +242,17 @@ body {
 }
 
 #about-background-image-main {
-  position: absolute;
   opacity: .2;
   z-index: 1;
+  flex: 1 1 auto;
+  background-size: cover;
 }
 
 /* ##################### FOOTER ##################### */
 
 #footer-container {
   text-align: center;
-  display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: inherit;
 }

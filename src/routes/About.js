@@ -4,6 +4,9 @@ import BackgroundImage from '../components/Background-Image';
 const About = props => {
     return(
         <div id="App-body-main">
+            <div id="about-background-image-main">
+                <BackgroundImage />
+            </div>
             <div className="about-main-inner">
                 <div className="personal-quote-container">
                     <div>
@@ -14,9 +17,6 @@ const About = props => {
                     </div>
                 </div>
             </div>
-            <div id="about-background-image-main">
-                <BackgroundImage />
-            </div> 
         </div>
     )
 }
