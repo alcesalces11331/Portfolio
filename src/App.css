@@ -245,14 +245,12 @@ body {
 
 .personal-quote-container div p{
   margin: 0;
-  color: black;
+  color: rgb(59, 4, 4);
 }
 
 /* ##################### FOOTER ##################### */
 
 #footer-container {
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: inherit;
+  position: absolute;
+  bottom: 0;
 }
