@@ -4,7 +4,7 @@ import meJobInterview2019 from '../images/meJobInterview2019.jpg';
 
 const ImageRollin = props => {
     return(
-        <div>
+        <div id="professional-image-1">
             <Image src={meJobInterview2019} alt="image of myself, 2019; navy blue blazer, grey tie" />
         </div>
     )
