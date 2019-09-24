@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import UnderConstruction from '../components/Under-Construction';
 
 class ProjectsContainer extends Component {
 //    constructor(){
@@ -16,8 +17,8 @@ class ProjectsContainer extends Component {
 
     render() {
         return (
-            <div className="projects-body">
-                
+            <div className="projects-body-outer-container">
+                <UnderConstruction />
             </div>
         )
     }

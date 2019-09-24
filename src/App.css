@@ -295,6 +295,20 @@ body {
   }
 }
 
+/* ##################### PR0J3CTZ ##################### */
+
+#construction-photo-1 {
+  background-image: url('./images/blacksmithSparks.jpg');
+  background-size: cover;
+}
+
+.projects-body-outer-container {
+  height: 100%;
+  margin: 0;
+  background-image: url('./images/blacksmithSparks.jpg');
+  background-size: contain;
+}
+
 /* ##################### FOOTER ##################### */
 
 #footer-main-container {
