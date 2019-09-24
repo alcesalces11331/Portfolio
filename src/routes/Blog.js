@@ -1,18 +1,17 @@
 import React from 'react'
+import UnderConstruction from '../components/Under-Construction';
 
 const Blog = props => {
     return(
-        <div id="blog-body">
-            <div id="blog-title">Blog</div>
-            <div id="blog-info">
-                <p>
-                    Info on Blog
+        <div className="blog-body-main">
+            <div id="blog-ex-text">
+                <p>You can check out my blog <br />
+                    www.rollin-metzger.com <br />
+                    in the meantime :D.
                 </p>
             </div>
-            <div id="blog-nav">
-                link to blog
-            </div>
-        </div>
+            <UnderConstruction />
+        </div>  
     )
 }
 

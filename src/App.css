@@ -299,7 +299,9 @@ body {
 
 #construction-photo-1 {
   background-image: url('./images/blacksmithSparks.jpg');
-  background-size: cover;
+  background-size: contain;
+  height: 100%;
+  margin: 0;
 }
 
 .projects-body-outer-container {
@@ -309,7 +311,7 @@ body {
   background-size: contain;
 }
 
-.projects-inner-text {
+.uc-inner-text {
   position: relative;
   width: 300px;
   height: auto;
@@ -321,12 +323,20 @@ body {
   text-align: center;
 }
 
-.projects-inner-text p {
+.uc-inner-text p {
   padding: 0;
   margin: 0;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
 }
+
+/* ##################### BLOG ##################### */
+
+.blog-body-main {
+  height: 100%;
+  margin: 0;
+}
+
 
 /* ##################### FOOTER ##################### */
 
