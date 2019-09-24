@@ -56,11 +56,11 @@ img {
 
 #header {
   width: 100%;
-  position: top;
   z-index: 9999;
   max-width: none;
   background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0)
+  color: rgb(0, 0, 0);
+  margin-bottom: 5px;
 }
 
 .header-med-up {
@@ -268,6 +268,7 @@ body {
   position: left;
   flex-grow: 2;
   color: rgb(232, 240, 204);
+  overflow-y: auto;
 }
 
 .personal-image-container {
@@ -281,10 +282,16 @@ body {
     margin: 0;
   }
   .about-body-inner-container {
-    display: block;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .personal-image-container {
+    display: none;
   }
 }
 
