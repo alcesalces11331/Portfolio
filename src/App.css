@@ -181,16 +181,11 @@ body {
 
 #professional-image-1 {
   background-size: cover;
-  max-width: 50%;
-  height: auto;
-  position: relative;
+  max-width: 520px;
+  max-height: 520px;
 }
 
-@media only screen and (max-width: 1080px) {
-  #background-image-birdsFlying {
-    display: none;
-  }
-}
+
 
 #background-image-ensoEcosystem {
   display: none;
@@ -235,7 +230,7 @@ body {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: calc(100% - 80px);
   margin: 0;
   justify-content: center;
 }
@@ -243,7 +238,7 @@ body {
 .about-body-inner-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: 20px;
   padding: 5px;
@@ -264,23 +259,24 @@ body {
   margin-right: 20px;
 }
 
-.about-text {
-  position: left;
+.about-text-top {
   flex-grow: 2;
   color: rgb(232, 240, 204);
-  overflow-y: auto;
+}
+
+.about-text-bottom {
+  color: rgb(232, 240, 204);
+  flex-grow: 1;
 }
 
 .personal-image-container {
   flex-grow: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 1080px) {
-  #professional-image-1 {
-    position: relative;
-    min-width: 50%;
-    margin: 0;
-  }
   .about-body-inner-container {
     display: flex;
     flex-direction: column;
@@ -416,4 +412,20 @@ body {
 .fa-linkedin {
   background: #007BB5;
   color: white;
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 1080px) {
+  #background-image-birdsFlying {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1052px) {
+  #professional-image-1 img {
+    display: flex;
+    justify-content: center;
+  }
 }

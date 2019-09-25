@@ -13,7 +13,7 @@ const About = props => {
                 </div>
             </div>
             <div className="about-body-inner-container about-row-1">
-                <div className="about-text">
+                <div className="about-text-top">
                     <p>
                         Hello! I am Rollin and welcome to my personal portfolio site. I am full-stack developer by trade but a huge nerd by choice. I play in and run a campaign for D&D. I love literature and omnivorously read across genres. I enjoy video games, walks, and hanging out with my two cats, Mufasa and The Weeg. 
                     </p>
@@ -25,24 +25,20 @@ const About = props => {
                 <div className="personal-image-container">
                     <ImageRollin />
                 </div>
-                <div className="about-text">
+                <div className="about-text-bottom">
                     <p>
-                        Languages I'm currently using:
-                        <ul>
-                            <li>React and Javascript</li>
-                            <li>Ruby on Rails</li>
-                            <li>SQL</li>
-                        </ul>
+                        Languages I'm currently using:<br />
+                        React and Javascript<br />
+                        Ruby on Rails<br />
+                        SQL<br />
                     </p>
                     <p>
-                        Languages I'm currently learning/wanting to learn:
-                        <ul>
-                            <li>React Hooks</li>
-                            <li>Groovy/Grails and Java</li>
-                            <li>Python</li>
-                            <li>MongoDB</li>
-                            <li>Go</li>
-                        </ul>
+                        Languages I'm currently learning/wanting to learn:<br />
+                        React Hooks<br />
+                        Groovy/Grails and Java<br />
+                        Python<br />
+                        MongoDB<br />
+                        Go<br />
                     </p>
                 </div>
             </div>
