@@ -181,7 +181,7 @@ body {
 
 #professional-image-1 {
   background-size: cover;
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   position: relative;
 }
@@ -264,7 +264,7 @@ body {
   margin-right: 20px;
 }
 
-.about-image-text {
+.about-text {
   position: left;
   flex-grow: 2;
   color: rgb(232, 240, 204);
