@@ -185,12 +185,9 @@ body {
   max-height: 520px;
 }
 
-
-
 #background-image-ensoEcosystem {
   display: none;
 }
-  
 
 #background-image-ensoEcosystem img {
   background-position: center;
@@ -200,33 +197,10 @@ body {
   flex: 1;
 }
 
-@media only screen and (max-width: 1080px) {
-  #background-image-ensoEcosystem {
-    display: inline-flex;
-    position: relative;
-    z-index: 2;
-  }
-  .body-main-inner-fullName {
-    max-width: 960px;
-    margin: 0 auto;
-    z-index: 5;
-    display: inline-block;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .body-main-inner-fullName {
-    display: none;
-  }
-}
-
 /* ##################### ABOUT ##################### */
 
 #about-main-container {
-  background-image: url('./images/ancientTreeBwWithTheWind.jpg');
+  background-image: url('./images/fantasyDragonAdventure.jpg');
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -250,8 +224,9 @@ body {
 
 .personal-quote-container div p{
   margin: 5px;
-  color: rgb(232, 240, 204);
+  color: black;
   display: inline-block;
+  font-weight: bold;
 }
 
 .personal-image-container div {
@@ -261,12 +236,14 @@ body {
 
 .about-text-top {
   flex-grow: 2;
-  color: rgb(232, 240, 204);
+  color: black;
+  font-weight: bold;
 }
 
 .about-text-bottom {
-  color: rgb(232, 240, 204);
+  color: black;
   flex-grow: 1;
+  font-weight: bold;
 }
 
 .personal-image-container {
@@ -274,21 +251,6 @@ body {
   text-align: center;
   display: flex;
   justify-content: center;
-}
-
-@media only screen and (max-width: 1080px) {
-  .about-body-inner-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .personal-image-container {
-    display: none;
-  }
 }
 
 /* ##################### PR0J3CTZ ##################### */
@@ -414,8 +376,7 @@ body {
   color: white;
 }
 
-
-/* media queries */
+/* ##################### MEDIA QUERIES ##################### */
 
 @media only screen and (max-width: 1080px) {
   #background-image-birdsFlying {
@@ -427,5 +388,43 @@ body {
   #professional-image-1 img {
     display: flex;
     justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .about-body-inner-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .personal-image-container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  #background-image-ensoEcosystem {
+    display: inline-flex;
+    position: relative;
+    z-index: 2;
+  }
+  .body-main-inner-fullName {
+    max-width: 960px;
+    margin: 0 auto;
+    z-index: 5;
+    display: inline-block;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .body-main-inner-fullName {
+    display: none;
   }
 }
