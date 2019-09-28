@@ -200,7 +200,7 @@ body {
 /* ##################### ABOUT ##################### */
 
 #about-main-container {
-  background-image: url('./images/fantasyDragonAdventure.jpg');
+  background-image: url('./images/blackWhiteSpirals.jpg');
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -229,7 +229,7 @@ body {
 
 .personal-quote-container div {
   align-items: flex-start;
-  background-color: whitesmoke;
+  background-color: white;
   color: black;
 }
 
@@ -246,7 +246,7 @@ body {
 
 .about-text-top {
   flex-grow: 1;
-  background-color: whitesmoke;
+  background-color: white;
   color: black;
   font-weight: 500;
   font: 18px Times, serif;
@@ -258,7 +258,7 @@ body {
 }
 
 .about-text-bottom-1 {
-  background-color: whitesmoke;
+  background-color: white;
   color: black;
   font-weight: 500;
   align-self: left;
@@ -270,7 +270,7 @@ body {
 }
 
 .about-text-bottom-2 {
-  background-color: whitesmoke;
+  background-color: white;
   color: black;
   font-weight: 500;
   align-self: flex-start;
