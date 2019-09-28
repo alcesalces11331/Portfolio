@@ -203,23 +203,27 @@ body {
   background-image: url('./images/fantasyDragonAdventure.jpg');
   background-size: cover;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: calc(100% - 80px);
   margin: 0;
   justify-content: center;
+  overflow-y: auto;
 }
 
 .about-body-inner-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  text-align: center;
   margin: 20px;
   padding: 5px;
+  max-width: 1300px;
 }
 
 .personal-quote-container {
   position: relative;
+  max-width: 1300px;
 }
 
 .personal-quote-container div p{
@@ -230,8 +234,7 @@ body {
 }
 
 .personal-image-container div {
-  float: right;
-  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .about-text-top {
@@ -244,10 +247,12 @@ body {
   color: black;
   flex-grow: 1;
   font-weight: bold;
+  align-self: flex-start;
 }
 
 .personal-image-container {
-  flex-grow: 1;
+  flex-grow: 5;
+  align-self: flex-end;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -392,17 +397,33 @@ body {
 }
 
 @media only screen and (max-width: 1080px) {
-  .about-body-inner-container {
-    display: flex;
+  #about-main-container {
+    display: inline-block;
     flex-direction: column;
-    flex-wrap: wrap;
+  }
+  .personal-quote-container {
+    background-color: whitesmoke;
+    color: black;
+    font-weight: 500;
+  }
+  .about-body-inner-container {
+    display: inline-block;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .personal-image-container {
     justify-content: space-around;
   }
-}
-
-@media only screen and (max-width: 400px) {
-  .personal-image-container {
-    display: none;
+  .about-text-bottom {
+    background-color: whitesmoke;
+    color: black;
+    font-weight: 500;
+  }
+  .about-text-top {
+    color: black;
+    background-color: whitesmoke;
+    font-weight: 500;
   }
 }
 
