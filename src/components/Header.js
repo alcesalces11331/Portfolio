@@ -46,15 +46,17 @@ class Header extends Component {
     render() {
         return(
             <Navbar id="header" expand='md'>
-                <Navbar.Brand href="/">Rollin Metzger</Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="ml-auto">
-                        <Nav.Link href="/about">About</Nav.Link>
-                        <Nav.Link href="/projects">Projects</Nav.Link>
-                        <Nav.Link href="/blog">Blog</Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
+                <div className="header-main-container">
+                    <Navbar.Brand href="/">Rollin Metzger</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="ml-auto">
+                            <Nav.Link href="/about">About</Nav.Link>
+                            <Nav.Link href="/projects">Projects</Nav.Link>
+                            <Nav.Link href="/blog">Blog</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </div>   
             </Navbar>         
         )
     }
