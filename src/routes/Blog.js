@@ -6,7 +6,7 @@ const Blog = props => {
         <div className="blog-body-main">
             <div id="blog-ex-text">
                 <p>You can check out my blog <br />
-                    www.rollin-metzger.com <br />
+                    <a href="http://www.rollin-metzger.com">www.rollin-metzger.com</a><br />
                     in the meantime :D.
                 </p>
             </div>

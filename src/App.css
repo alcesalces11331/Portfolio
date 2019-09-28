@@ -69,11 +69,10 @@ img {
 .header-main-container {
   display: flex;
   flex-direction: row;
-  max-width: 1080px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  flex-grow: 1;
+  width: calc(66.6666% - 20px);
+  align-content: center;
+  justify-content: space-around;
+  
 }
 
 .header-med-up {
@@ -343,8 +342,16 @@ body {
 .blog-body-main {
   height: 100%;
   margin: 0;
+  overflow-y: scroll;
 }
 
+#blog-ex-text p a {
+  color: black;
+}
+
+#blog-ex-text p a:hover {
+  color: hotpink;
+}
 
 /* ##################### FOOTER ##################### */
 
