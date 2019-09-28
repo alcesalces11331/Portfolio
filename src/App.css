@@ -203,11 +203,13 @@ body {
   background-image: url('./images/fantasyDragonAdventure.jpg');
   background-size: cover;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  flex-wrap: nowrap;
   height: calc(100% - 80px);
   margin: 0;
   justify-content: center;
   overflow-y: auto;
+  align-items: center;
 }
 
 .about-body-inner-container {
@@ -216,46 +218,75 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-  margin: 20px;
-  padding: 5px;
+  margin: 0 20px;
   max-width: 1300px;
 }
 
 .personal-quote-container {
-  position: relative;
-  max-width: 1300px;
+  max-width: 1080px;
+  margin: 20px;
+}
+
+.personal-quote-container div {
+  align-items: flex-start;
+  background-color: whitesmoke;
+  color: black;
 }
 
 .personal-quote-container div p{
-  margin: 5px;
-  color: black;
+  margin: 0;
   display: inline-block;
-  font-weight: bold;
+  font-weight: 500;
+  font: 18px Times, serif;
 }
 
 .personal-image-container div {
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .about-text-top {
-  flex-grow: 2;
+  flex-grow: 1;
+  background-color: whitesmoke;
   color: black;
-  font-weight: bold;
+  font-weight: 500;
+  font: 18px Times, serif;
 }
 
-.about-text-bottom {
+.about-text-bottom-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-text-bottom-1 {
+  background-color: whitesmoke;
   color: black;
-  flex-grow: 1;
-  font-weight: bold;
+  font-weight: 500;
+  align-self: left;
+  margin: 20px 0;
+}
+
+.about-text-bottom-1 p {
+  font: 15px Times, serif;
+}
+
+.about-text-bottom-2 {
+  background-color: whitesmoke;
+  color: black;
+  font-weight: 500;
   align-self: flex-start;
+  margin: 20px 0;
+}
+
+.about-text-bottom-2 p {
+  font: 15px Times, serif;
 }
 
 .personal-image-container {
   flex-grow: 5;
   align-self: flex-end;
-  text-align: center;
+  text-align: left;
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 
 /* ##################### PR0J3CTZ ##################### */
@@ -401,11 +432,6 @@ body {
     display: inline-block;
     flex-direction: column;
   }
-  .personal-quote-container {
-    background-color: whitesmoke;
-    color: black;
-    font-weight: 500;
-  }
   .about-body-inner-container {
     display: inline-block;
     flex-direction: column;
@@ -414,16 +440,6 @@ body {
   }
   .personal-image-container {
     justify-content: space-around;
-  }
-  .about-text-bottom {
-    background-color: whitesmoke;
-    color: black;
-    font-weight: 500;
-  }
-  .about-text-top {
-    color: black;
-    background-color: whitesmoke;
-    font-weight: 500;
   }
 }
 
