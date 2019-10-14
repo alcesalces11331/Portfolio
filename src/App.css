@@ -20,16 +20,6 @@ body, html {
   flex-direction: column;
 }
 
-/*
-.App::after {
-  content: '\00a0';
-  display: block;
-  margin-top: var(--space);
-  height: 0;
-  visibility: hidden;
-}
-*/
-
 .App-header .App-body-main {
   background-color: rgb(251,251,249);
   flex-direction: column;
@@ -335,6 +325,30 @@ body {
   margin: 0;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
+}
+
+/* ##################### RESUME ##################### */
+
+.resume-body-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.resume-header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+#resume-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.resume-p-text {
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* ##################### BLOG ##################### */

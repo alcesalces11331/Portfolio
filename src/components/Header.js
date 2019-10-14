@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Nav from 'react-bootstrap/Nav'
-import { Link } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 
 class Header extends Component {
@@ -20,7 +19,7 @@ class Header extends Component {
             </Navbar>
         )
     }
-
+/*
     renderMediumUp = () => {
         return(
             <div className="header-med-up">
@@ -35,6 +34,7 @@ class Header extends Component {
                                 <Link to="/about" className="header-nav-link">About</Link>
                                 <Link to="/projects" className="header-nav-link">Projects</Link>
                                 <Link to="/blog" className="header-nav-link">Blog</Link>
+                                <Link to="/resume" className="header-nav-link">Resume</Link>
                             </Nav>
                         </div>
                     </div>
@@ -42,7 +42,7 @@ class Header extends Component {
             </div>
         )
     }
-
+*/
     render() {
         return(
             <Navbar id="header" expand='md'>
@@ -54,6 +54,7 @@ class Header extends Component {
                             <Nav.Link href="/about">About</Nav.Link>
                             <Nav.Link href="/projects">Projects</Nav.Link>
                             <Nav.Link href="/blog">Blog</Nav.Link>
+                            <Nav.Link href="/resume">Resume</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </div>   

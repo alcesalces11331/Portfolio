@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import About from '../routes/About';
 import ProjectsContainer from '../containers/ProjectsContainer';
 import Blog from '../routes/Blog';
+import Resume from '../routes/Resume';
 
 import Home from '../components/Home';
 
@@ -29,6 +30,7 @@ function AppRouter() {
                     <Route path="/blog" exact component={Blog} />
                     <Route path="/projects" exact component={ProjectsContainer} />
                     <Route path="/about" exact component={About} />
+                    <Route path="/resume" exact component={Resume} />
                 </Switch>
                 
                 <Footer />
