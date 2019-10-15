@@ -15,47 +15,59 @@ const Resume = props => {
                 </p>
             </div>
             <div className="resume-section">
-                <p className="resume-section-header">Education History</p>
-                <p>Flatiron School</p>
+                <p className="resume-section-header">EDUCATION HISTORY</p>
+                <p className="resume-section-sep">Flatiron School</p>
                 <p>+ Full-Stack Web Development</p>
-                <p>University of Nebraska-Lincoln</p>
+                <p className="resume-section-sep">University of Nebraska-Lincoln</p>
                 <p>+ Bachelor's of Science: Mathematics & Philosophy</p>
             </div>
             <div className="resume-section">
                 <p className="resume-section-header">TECHNICAL PROJECTS</p>
-                <p>MTG Mock Drafter</p>
-                <p>
-                    Card drafter for Magic: The Gathering card viewing
-                    + Use React to handle immediate state changes for a smooth user experience.
-                    + Use Redux to handle data from asynchronous fetch actions.
-                    + Utilize a Rails API for data persistence.
-                    + Routes are RESTful and actions are all asynchronous.
-                    + Blog post about this project.
-                </p>
-                <p>Two Taverns</p>
-                <p>
-                    Build your own Dungeons and Dragons Campaign.
-                    + Utilize jQuery and AJAX to update your own campaign database.
-                    + Sort, add, link anything to any quest.
-                    + Organize the adventure by quests with more to come!
-                    + RESTful, CRUD, DRY.
-                </p>
-                <p>SpellCats</p>
-                <p>
-                    A fun avatar creation and user interaction Rails app.
-                    + Build using the Rails gem.
-                    + Create your own content using SQL.
-                    + Validate, authenticate, link using respective gems.
-                    + RESTful routes.
-                </p>
-                <p>CreatU</p>
-                <p>
-                    Create and manage player characters and non-player characters for Dungeons and Dragons
-                    + Use the Sinatra library to create and store characters.
-                    + Store creations in a SQL database.
-                    + CRUD resources.
-                    + Validation of input to deny invalid data persistence.
-                </p>
+                <div className="tech-section-container">
+                    <p className="resume-section-sep">MTG Mock Drafter</p>
+                    <p>
+                        Card drafter for Magic: The Gathering card viewing<br />
+                        + Use React to handle immediate state changes for a smooth user experience.<br />
+                        + Use Redux to handle data from asynchronous fetch actions.<br />
+                        + Utilize a Rails API for data persistence.<br />
+                        + Routes are RESTful and actions are all asynchronous.<br />
+                        + Blog post about this project.
+                    </p>
+                </div>
+                
+                <div className="tech-section-container">
+                    <p className="resume-section-sep">Two Taverns</p>
+                    <p>
+                        Build your own Dungeons and Dragons Campaign. <br />
+                        + Utilize jQuery and AJAX to update your own campaign database.<br />
+                        + Sort, add, link anything to any quest.<br />
+                        + Organize the adventure by quests with more to come!<br />
+                        + RESTful, CRUD, DRY.<br />
+                    </p>
+                </div>
+                
+                <div className="tech-section-container">
+                    <p className="resume-section-sep">SpellCats</p>
+                    <p>
+                        A fun avatar creation and user interaction Rails app.<br />
+                        + Build using the Rails gem.<br />
+                        + Create your own content using SQL.<br />
+                        + Validate, authenticate, link using respective gems.<br />
+                        + RESTful routes.<br />
+                    </p>
+                </div>
+                
+                <div className="tech-section-container">
+                    <p className="resume-section-sep">CreatU</p>
+                    <p>
+                        Create and manage player characters and non-player characters for Dungeons and Dragons<br />
+                        + Use the Sinatra library to create and store characters.<br />
+                        + Store creations in a SQL database.<br />
+                        + CRUD resources.<br />
+                        + Validation of input to deny invalid data persistence.<br />
+                    </p>
+                </div>
+                
             </div>
             <div className="resume-section">
                 <p className="resume-section-header">TECHNICAL SKILLS</p>
@@ -64,13 +76,13 @@ const Resume = props => {
             <div className="resume-section">
                 <p className="resume-section-header">EMPLOYMENT HISTORY</p>
                 <p>
-                    Open Harvest Cooperative Grocery, Lincoln, Nebraska
-                    + Assistant Grocery Manager, June 2018 - Present
-                        - Purchase for refrigerated, frozen, bulk, and grocery; maintain fluid inventory numbers with minimal waste.
-                        - Managing employees' tasks and priorities; separating concerns within the department; hire and train
-                        - Tracking individual budgets to meet their respective margin goals.
-                    + Lead Grocery Clerk/Front End Supervisor, June 2016 - June 2018
-                    + Meat & Seafood Coordinator, November 2014 - June 2016
+                    <strong>Open Harvest Cooperative Grocery, Lincoln, Nebraska</strong><br />
+                    + Assistant Grocery Manager, June 2018 - Present<br />
+                        - Purchase for refrigerated, frozen, bulk, and grocery; maintain fluid inventory numbers with minimal waste.<br />
+                        - Managing employees' tasks and priorities; separating concerns within the department; hire and train<br />
+                        - Tracking individual budgets to meet their respective margin goals.<br />
+                    + Lead Grocery Clerk/Front End Supervisor, June 2016 - June 2018<br />
+                    + Meat & Seafood Coordinator, November 2014 - June 2016<br />
                     + Food Service Clerk May 2009 - November 2014
                 </p>
             </div>    

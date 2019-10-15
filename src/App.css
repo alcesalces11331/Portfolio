@@ -333,6 +333,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 auto;
+  max-width: 1048px;
 }
 
 .resume-header {
@@ -344,11 +346,44 @@ body {
 
 #resume-title {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.resume-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.resume-section p {
+  margin: 0;
+}
+
+.tech-section-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 720px;
+  margin: 5px 0;
 }
 
 .resume-p-text {
   font-family: 'Times New Roman', Times, serif;
+}
+
+.resume-section-header {
+  font-weight: 300;
+  background-color: rgb(246, 244, 239);
+  margin: 0;
+  font-size: 18px;
+}
+
+.resume-section-sep {
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 15px;
 }
 
 /* ##################### BLOG ##################### */
